@@ -103,7 +103,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="посмотреть комментарий"/>
                                                 <connections>
-                                                    <segue destination="ibn-P5-5on" kind="show" id="Tur-Ne-Zcw"/>
+                                                    <segue destination="M7Y-T7-aT1" kind="show" id="2CH-wJ-uIZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpW-ev-ZdL">
@@ -111,7 +111,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="оставить комментарий "/>
                                                 <connections>
-                                                    <segue destination="VZk-pu-Bjv" kind="show" id="ZhL-VX-ivS"/>
+                                                    <segue destination="3JU-GT-nBV" kind="show" id="jBY-2Q-E1a"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -148,45 +148,26 @@
             </objects>
             <point key="canvasLocation" x="1696" y="-42"/>
         </scene>
-        <!--ReviewTVC-->
-        <scene sceneID="G70-Ja-OU3">
+        <!--Review-->
+        <scene sceneID="xcK-wz-SOB">
             <objects>
-                <tableViewController id="ibn-P5-5on" customClass="ReviewTVC" customModule="MVC___App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="9M9-Qj-oUw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="qvz-GI-d4f" customClass="ReviewsTableViewCell" customModule="MVC___App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qvz-GI-d4f" id="nsr-06-4O1">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ibn-P5-5on" id="e6a-DD-1YF"/>
-                            <outlet property="delegate" destination="ibn-P5-5on" id="TR7-8l-lv2"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="HWO-eE-TPG"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QRm-Sf-mRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Review" id="M7Y-T7-aT1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="neH-sf-Nk5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzX-1e-sVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2462" y="-42"/>
+            <point key="canvasLocation" x="2394" y="-63"/>
         </scene>
-        <!--Feed BackVC-->
+        <!--View Controller-->
         <scene sceneID="i5s-RL-y9v">
             <objects>
-                <viewController id="VZk-pu-Bjv" customClass="FeedBackVC" customModule="MVC___App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VZk-pu-Bjv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lpk-xO-XKK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="pRR-u8-bFb">
-                                <rect key="frame" x="25" y="138" width="364" height="448"/>
+                                <rect key="frame" x="25" y="94" width="364" height="492"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш отзыв" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGG-IF-8Rw">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="30"/>
@@ -198,20 +179,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rewiev" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UPj-wc-aA0">
-                                        <rect key="frame" x="0.0" y="70" width="364" height="236"/>
+                                        <rect key="frame" x="0.0" y="70" width="364" height="280"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The rewiev must containt more than 20 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuK-c5-37u">
-                                        <rect key="frame" x="0.0" y="326" width="364" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="370" width="364" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TdO-7d-BHh">
-                                        <rect key="frame" x="0.0" y="346" width="364" height="32"/>
+                                        <rect key="frame" x="0.0" y="390" width="364" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="Urp-eW-3J2"/>
                                         </constraints>
@@ -224,7 +205,7 @@
                                         </segments>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5Z-TR-pd6">
-                                        <rect key="frame" x="0.0" y="417" width="364" height="31"/>
+                                        <rect key="frame" x="0.0" y="461" width="364" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="9Lu-Ot-gaV"/>
                                         </constraints>
@@ -258,7 +239,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRa-2f-jgQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="HV3-Z4-pt1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1696" y="704"/>
+            <point key="canvasLocation" x="1561" y="1085"/>
+        </scene>
+        <!--Feedback-->
+        <scene sceneID="vFs-NF-xEs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feedback" id="3JU-GT-nBV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nmy-gl-InI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZw-b1-GiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718" y="414"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Oh-Lk-oAZ">

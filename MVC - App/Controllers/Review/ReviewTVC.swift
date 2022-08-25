@@ -8,8 +8,9 @@
 import UIKit
 
 class ReviewTVC: UITableViewController {
-    var index: Int!
     
+    var index: Int!
+
     var fighter: Fight {
         FightersData.shared.meals[index]
     }
@@ -25,16 +26,14 @@ class ReviewTVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         fighter.feedBacks.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewsTableViewCell", for: indexPath) as! ReviewsTableViewCell
-        
+
         let feedback = fighter.feedBacks[indexPath.row]
         cell.nameLabel.text = feedback.dateString
         cell.textLbl.text = feedback.text
         cell.raitingLabel.text = fighter.raitingBar
         return cell
     }
-
-
 }

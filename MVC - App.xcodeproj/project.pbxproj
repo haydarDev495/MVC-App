@@ -22,6 +22,8 @@
 		0D0B02BB28B6FD560047F69D /* ReviewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B02BA28B6FD560047F69D /* ReviewTVC.swift */; };
 		0D0B02C328B6FF020047F69D /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0B02C128B6FF020047F69D /* ReviewsTableViewCell.swift */; };
 		0D0B02C428B6FF020047F69D /* ReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0B02C228B6FF020047F69D /* ReviewsTableViewCell.xib */; };
+		0D0B02C628B704680047F69D /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0B02C528B704680047F69D /* Review.storyboard */; };
+		0D0B02CA28B705560047F69D /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0B02C928B705560047F69D /* Feedback.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		0D0B02BA28B6FD560047F69D /* ReviewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTVC.swift; sourceTree = "<group>"; };
 		0D0B02C128B6FF020047F69D /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
 		0D0B02C228B6FF020047F69D /* ReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsTableViewCell.xib; sourceTree = "<group>"; };
+		0D0B02C528B704680047F69D /* Review.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Review.storyboard; sourceTree = "<group>"; };
+		0D0B02C928B705560047F69D /* Feedback.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feedback.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				0D0B02A028B6CFE70047F69D /* Main.storyboard */,
+				0D0B02C528B704680047F69D /* Review.storyboard */,
+				0D0B02C928B705560047F69D /* Feedback.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,9 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0B02A128B6CFE70047F69D /* Main.storyboard in Resources */,
+				0D0B02C628B704680047F69D /* Review.storyboard in Resources */,
 				0D0B02C428B6FF020047F69D /* ReviewsTableViewCell.xib in Resources */,
 				0D0B029428B6CDFB0047F69D /* LaunchScreen.storyboard in Resources */,
 				0D0B029128B6CDFB0047F69D /* Assets.xcassets in Resources */,
+				0D0B02CA28B705560047F69D /* Feedback.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,9 @@
 import Foundation
 
 class FightersData {
-    
     static let shared = FightersData()
-    var meals : [Fight]
-    
+    var meals: [Fight]
+
     private init() {
         meals = [Fight(name: "Khabib", wins: 29.0, image: #imageLiteral(resourceName: "Khabib.png")),
                  Fight(name: "Islam", wins: 22.1, image: #imageLiteral(resourceName: "Islam.jpeg")),

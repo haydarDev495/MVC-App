@@ -8,11 +8,10 @@
 import UIKit
 
 class ReviewsTableViewCell: UITableViewCell {
+    @IBOutlet var raitingLabel: UILabel!
+    @IBOutlet var textLbl: UILabel!
+    @IBOutlet var nameLabel: UILabel!
 
-    @IBOutlet weak var raitingLabel: UILabel!
-    @IBOutlet weak var textLbl: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +22,4 @@ class ReviewsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
